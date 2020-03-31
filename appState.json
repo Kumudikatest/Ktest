@@ -1,43 +1,46 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "2cc6da0c-757a-4742-b49a-84de3ac6507d": {
-        "id": "2cc6da0c-757a-4742-b49a-84de3ac6507d",
+      "d774ce49-0b51-4957-8f36-15636df1f5f4": {
+        "id": "d774ce49-0b51-4957-8f36-15636df1f5f4",
         "parent": null,
-        "name": "Ktest",
-        "type": "DIRECTORY",
-        "isDirectory": true,
-        "children": [
-          "6d44679c-dd27-4502-8d22-cfda96a31477"
-        ],
-        "isRemovable": false,
-        "filePath": "Ktest"
-      },
-      "6d44679c-dd27-4502-8d22-cfda96a31477": {
-        "id": "6d44679c-dd27-4502-8d22-cfda96a31477",
-        "parent": "2cc6da0c-757a-4742-b49a-84de3ac6507d",
-        "name": "lambda.js",
-        "type": "LAMBDA_FILE",
+        "name": "ktest.js",
+        "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "Ktest/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
-        "triggers": [],
+        "filePath": "ktest.js",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "nodejs10.x",
+          "handler": "handler",
           "timeout": 60,
-          "memory": 128
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": []
+      }
+    },
+    "openFiles": [
+      "d774ce49-0b51-4957-8f36-15636df1f5f4"
+    ],
+    "currentFileId": "d774ce49-0b51-4957-8f36-15636df1f5f4",
+    "resources": {
+      "ebResource": {
+        "name": "ebResource",
+        "type": "EventBridge",
+        "config": {
+          "selectedRegion": "us-east-1"
         }
       }
     },
-    "deletedFiles": [],
-    "rootNode": "2cc6da0c-757a-4742-b49a-84de3ac6507d",
-    "openFiles": [
-      "6d44679c-dd27-4502-8d22-cfda96a31477"
-    ],
-    "currentFileId": "6d44679c-dd27-4502-8d22-cfda96a31477",
-    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
     "envVariables": [
       {
         "lambdaId": "all",
@@ -49,26 +52,32 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
-    },
-    "lambdaId": "6d44679c-dd27-4502-8d22-cfda96a31477"
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
   },
   "PROJECT_META": {
-    "projectName": "Ktest",
+    "projectName": "ktest",
     "projectDescription": "",
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
-    "lastSave": 1542106360609,
-    "platformRegions": {
-      "AWS": "us-east-2"
-    }
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1585639931596
   },
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
-      "name": "Ktest",
-      "url": "https://github.com/Kumudikatest/Ktest"
+      "name": "ktest",
+      "url": "https://github.com/Kumudikatest/ktest"
     }
   }
 }
