@@ -1,4 +1,16 @@
+let AWS = require('aws-sdk');
+const cognito_idp = new AWS.CognitoIdentityServiceProvider();
+
 exports.handler = async (event) => {
-    
-    return {"message": "Successfully executed"};
+    try {
+        let data = await cognito_idp.listUsers({
+            UserPoolId: process.env.UserPoolId_cognitonew,
+            Limit: 10
+        }).promise();
+console.log(data)
+    } catch (err) {
+        // error handling goes here
+    };
+
+    return { "message": "Successfully executed" };
 };
