@@ -1,16 +1,14 @@
 let AWS = require('aws-sdk');
-const cognito_idp = new AWS.CognitoIdentityServiceProvider();
+const kinesis = new AWS.Kinesis();
 
 exports.handler = async (event) => {
     try {
-        let data = await cognito_idp.listUsers({
-            UserPoolId: process.env.UserPoolId_cognitonew,
-            Limit: 10
+        let data = await kinesis.describeStream({
+            StreamName: "K"
         }).promise();
-console.log(data)
+console.log(data);
     } catch (err) {
         // error handling goes here
-console.log(err)       
     };
 
     return { "message": "Successfully executed" };
