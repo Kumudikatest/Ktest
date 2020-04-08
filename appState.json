@@ -1,8 +1,8 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "e6eeb621-89b7-4d03-815f-97a6d19dfc86": {
-        "id": "e6eeb621-89b7-4d03-815f-97a6d19dfc86",
+      "885b5a07-0993-4b80-8d3c-26796e9480f7": {
+        "id": "885b5a07-0993-4b80-8d3c-26796e9480f7",
         "parent": null,
         "name": "ktest.js",
         "type": "JS_LAMBDA",
@@ -22,39 +22,14 @@
           "layers": [],
           "name": "ktest"
         },
-        "triggers": [
-          {
-            "resourceName": "apigusEast1243firstpathpost",
-            "config": {}
-          }
-        ]
+        "triggers": []
       }
     },
     "openFiles": [
-      "e6eeb621-89b7-4d03-815f-97a6d19dfc86"
+      "885b5a07-0993-4b80-8d3c-26796e9480f7"
     ],
-    "currentFileId": "e6eeb621-89b7-4d03-815f-97a6d19dfc86",
-    "resources": {
-      "apigusEast1243firstpathpost": {
-        "name": "apigusEast1243firstpathpost",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 0,
-          "apiName": "243",
-          "endpointType": "EDGE",
-          "resourceMode": 0,
-          "resourceName": "firstpath",
-          "resourcePath": "/firstpath",
-          "restMethod": "POST",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 0,
-          "stageName": "firststage",
-          "mode": 0
-        }
-      }
-    },
+    "currentFileId": "885b5a07-0993-4b80-8d3c-26796e9480f7",
+    "resources": {},
     "customTemplate": {
       "overrideDefault": false,
       "dialect": null,
@@ -82,7 +57,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1586330582523
+    "lastSave": 1586330843336
   },
   "VCS_STATE": {
     "provider": "GitHub",
