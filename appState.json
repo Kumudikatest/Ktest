@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "ktest.js",
         "cursor": {
-          "lineNumber": 10,
-          "column": 18
+          "lineNumber": 13,
+          "column": 16
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -256,7 +256,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1586344685932
+    "lastSave": 1586345045412
   },
   "VCS_STATE": {
     "provider": "GitHub",
