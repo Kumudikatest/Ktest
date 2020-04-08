@@ -1,16 +1,10 @@
 let AWS = require('aws-sdk');
-const eventBridge = new AWS.EventBridge();
+const kinesis = new AWS.Kinesis();
 
 exports.handler = async (event) => {
     try {
-        let data = await eventBridge.putEvents({
-            Entries: [{
-                EventBusName: "default",
-                Source: " !@#$%^&*()/",
-                DetailType: " ",
-                Detail: "{}",
-                Time: "!@#$%^&*()_?/"
-            }]
+        let data = await kinesis.describeStream({
+            StreamName: "K"
         }).promise();
 
     } catch (err) {
