@@ -22,7 +22,12 @@
           "layers": [],
           "name": "ktest"
         },
-        "triggers": []
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIMyLambdadelete",
+            "config": {}
+          }
+        ]
       }
     },
     "openFiles": [
@@ -30,6 +35,39 @@
     ],
     "currentFileId": "a6bb0be0-e04b-42b2-8704-1e0fa8b9fa53",
     "resources": {
+      "apigusEast1TestAPIMyLambdadelete": {
+        "name": "apigusEast1TestAPIMyLambdadelete",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/testdbput": "bu1jy0",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/MyLambda",
+          "resourceName": "MyLambda",
+          "resourceId": "98nqbj",
+          "restMethod": "DELETE",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "km0kzm",
+          "mode": 1
+        }
+      },
       "kinesisK": {
         "name": "kinesisK",
         "type": "Kinesis",
@@ -77,7 +115,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1586321066499
+    "lastSave": 1586322311467
   },
   "VCS_STATE": {
     "provider": "GitHub",
