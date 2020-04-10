@@ -57,6 +57,16 @@
         "children": [],
         "isRemovable": false,
         "filePath": "main.py"
+      },
+      "09251cf6-1927-45ab-9f89-25476e9297eb": {
+        "id": "09251cf6-1927-45ab-9f89-25476e9297eb",
+        "parent": null,
+        "name": "Authorizer.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Authorizer.js"
       }
     },
     "openFiles": [
@@ -321,6 +331,11 @@
             ]
           }
         }
+      },
+      "datastore": {
+        "name": "datastore",
+        "type": "CloudDatastore",
+        "config": {}
       }
     },
     "customTemplate": {
@@ -370,6 +385,13 @@
           "version": "2.644.0",
           "dev": false,
           "notRemovable": false
+        },
+        "googleapis": {
+          "name": "googleapis",
+          "language": "nodejs",
+          "version": "29.0.0",
+          "dev": false,
+          "notRemovable": false
         }
       }
     }
@@ -384,7 +406,7 @@
     "platformRegions": {
       "AWS": "us-east-1"
     },
-    "lastSave": 1586494751557
+    "lastSave": 1586495498880
   },
   "VCS_STATE": {
     "provider": "GitHub",
