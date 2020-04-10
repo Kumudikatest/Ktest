@@ -1,8 +1,8 @@
 {
   "name": "ktest",
   "version": "1.0.0",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "aws-sdk": "2.644.0"
-  }
+  },
+  "devDependencies": {}
 }
