@@ -1,113 +1,74 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "85cb4293-fd30-4f35-b566-6745e3518dd0": {
-        "id": "85cb4293-fd30-4f35-b566-6745e3518dd0",
+      "e314656d-3c96-4c9b-be20-e5a35b4932c7": {
+        "id": "e314656d-3c96-4c9b-be20-e5a35b4932c7",
         "parent": null,
-        "name": "ktest.js",
+        "name": "Ktest.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "ktest.js",
+        "filePath": "Ktest.js",
         "cursor": {
-          "lineNumber": 1,
-          "column": 1
+          "lineNumber": 2,
+          "column": 11
         },
         "config": {
-          "runtime": "nodejs8",
+          "runtime": "nodejs10.x",
+          "handler": "handler",
           "timeout": 60,
           "memory": 128,
-          "triggerType": 0,
-          "name": "ktest",
-          "handler": "handler"
+          "layers": [],
+          "name": "Ktest"
         },
-        "triggers": [
-          {
-            "resourceName": "http-trigger",
-            "config": {}
-          }
-        ]
-      },
-      "ada541c1-9334-45c4-b7e8-b99c6951d75a": {
-        "id": "ada541c1-9334-45c4-b7e8-b99c6951d75a",
-        "parent": null,
-        "name": "index.js",
-        "type": "JS_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": false,
-        "filePath": "index.js"
-      },
-      "37e7c2c0-aace-444a-b6a2-bd898f50e7d7": {
-        "id": "37e7c2c0-aace-444a-b6a2-bd898f50e7d7",
-        "parent": null,
-        "name": "main.py",
-        "type": "PYTHON_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": false,
-        "filePath": "main.py"
-      },
-      "76822247-848e-4c6a-aea1-7962a92166d6": {
-        "id": "76822247-848e-4c6a-aea1-7962a92166d6",
-        "parent": null,
-        "name": "Authorizer.js",
-        "type": "JS_FILE",
-        "isDirectory": false,
-        "children": [],
-        "isRemovable": true,
-        "filePath": "Authorizer.js"
-      }
-    },
-    "openFiles": [
-      "85cb4293-fd30-4f35-b566-6745e3518dd0"
-    ],
-    "currentFileId": "85cb4293-fd30-4f35-b566-6745e3518dd0",
-    "resources": {
-      "http-trigger": {
-        "name": "http-trigger",
-        "type": "http-trigger",
-        "config": {}
-      },
-      "storagesamplegcs": {
-        "name": "storagesamplegcs",
-        "type": "CloudStorage",
-        "config": {
-          "mode": 1,
-          "bucket": {
-            "name": "sample_gcs"
+        "triggers": [],
+        "lastUpdated": 1602246671482,
+        "testCases": {
+          "0c8efca4-4a9f-49f4-9bcc-d32a6c417545": {
+            "id": "0c8efca4-4a9f-49f4-9bcc-d32a6c417545",
+            "functionId": "e314656d-3c96-4c9b-be20-e5a35b4932c7",
+            "name": "My First Test Case",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
           }
         }
       }
     },
+    "openFiles": [
+      "e314656d-3c96-4c9b-be20-e5a35b4932c7"
+    ],
+    "currentFileId": "e314656d-3c96-4c9b-be20-e5a35b4932c7",
+    "resources": {},
     "customTemplate": {
+      "syntax": "JSON",
       "overrideDefault": false,
       "dialect": null,
       "definitions": null
     },
-    "envVariables": [],
-    "packageJSON": {
-      "dependencies": {
-        "googleapis": {
-          "name": "googleapis",
-          "language": "nodejs",
-          "version": "29.0.0",
-          "dev": false,
-          "notRemovable": false
-        }
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
       }
+    ],
+    "packageJSON": {
+      "dependencies": {}
     }
   },
   "PROJECT_META": {
-    "projectName": "ktest",
-    "projectDescription": "",
+    "sigmaVersion": "1.4.4",
+    "projectName": "Ktest",
+    "projectDescription": "My First Project",
     "projectVersion": "1.0.0",
-    "projectRegion": "us-central1",
-    "platform": "GCP",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1586496361946
+    "lastSave": 1602246721931
   },
   "VCS_STATE": {
     "provider": "GitHub",
